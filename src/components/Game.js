@@ -12,6 +12,14 @@ export default class Game extends Component {
             ]
         }
     }
+
+    jumpTo(step) {
+        this.setState({
+            stepNumber: step,
+            xIsNext: (step%2) === 0
+        })
+    }
+
     handleClick(i) {
         const history = this.state.history.slice(0, this.state.stepNumber + 1);
         const current = history[history.length - 1];
@@ -20,7 +28,6 @@ export default class Game extends Component {
         if(winner || squares[i]) {
             return;
         }
-
         squares[i] = this.state.xIsNext ? 'X' : 'O';
         this.setState({
             history: history.concat({
@@ -31,9 +38,7 @@ export default class Game extends Component {
         });
     }
 
-
     render () {
-
         const history = this.state.history;
         const current = history[this.state.stepNumber];
         const winner = calculateWinner(current.squares);
@@ -71,7 +76,6 @@ export default class Game extends Component {
     }
 }
 
-
 function calculateWinner(squares) {
     const lines = [
         [0, 1, 2],
@@ -90,6 +94,5 @@ function calculateWinner(squares) {
             return squares[a];
         }
     }
-    
     return null;
 }
