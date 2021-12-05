@@ -1,16 +1,16 @@
 .square {
   background: white;
   border: 1px solid gray;
-  float: left;
-  font-size: 40px;
+  float: none;
+  font-size: 25px;
   font-weight: bold;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 70px;
-  line-height: 70px;
-  height: 70px;
+  width: 75px;
+  line-height: 75px;
+  height: 75px;
   display: inline-block;
 
   text-decoration: none;
@@ -59,7 +59,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -42%);
   display: flex;
   flex-direction: row;
   margin: 0 auto;
