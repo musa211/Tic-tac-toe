@@ -14,16 +14,31 @@ export default class Board extends Component {
                     {this.renderSquare(0)}
                     {this.renderSquare(1)}
                     {this.renderSquare(2)}
+                    {this.renderSquare(2)}
                 </div>
                 <div className="border-row">
                     {this.renderSquare(3)}
                     {this.renderSquare(4)}
                     {this.renderSquare(5)}
+                    {this.renderSquare(2)}
                 </div>
                 <div className="border-row">
                     {this.renderSquare(6)}
                     {this.renderSquare(7)}
                     {this.renderSquare(8)}
+                    {this.renderSquare(2)}
+                </div>
+                <div className="border-row">
+                    {this.renderSquare(6)}
+                    {this.renderSquare(7)}
+                    {this.renderSquare(8)}
+                    {this.renderSquare(2)}
+                </div>
+                <div className="border-row">
+                    {this.renderSquare(6)}
+                    {this.renderSquare(7)}
+                    {this.renderSquare(8)}
+                    {this.renderSquare(2)}
                 </div>
             </div>
         )
