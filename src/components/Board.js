@@ -4,9 +4,10 @@ import Square from "./Square";
 export default class Board extends Component {
     renderSquare(i) {
         return <Square value={this.props.squares[i]}
-        onClick={this.props.onClick(i)} />
+        onClick={()=>this.props.onClick(i)}
+        />
     }
-    render() {
+    render() {  // To create board shape
         return (
             <div>
                 <div className="border-row">
