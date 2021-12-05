@@ -14,23 +14,19 @@
   display: inline-block;
 
   text-decoration: none;
-  color: rgb(20, 4, 4); /* font color */
+  color: white; /* font color */
   font-weight: bold;
   background-color: #538fbe;
   margin: 10px;
   border: 1px solid #2d6898; /* square border */
-  background-image: linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0, rgb(73, 132, 180)),
-        color-stop(1, rgb(97, 155, 203))
-    );
+
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, #F56960),   /* Bottom color*/
+      color-stop(1, #df4a9e)    /* Top color*/
+  );
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -41,19 +37,13 @@
     
 }
 
-.square:active {
-  background-image: linear-gradient(bottom, rgb(88,154,204) 0%, rgb(90,150,199) 100%);
-  background-image: -o-linear-gradient(bottom, rgb(88,154,204) 0%, rgb(90,150,199) 100%);
-  background-image: -moz-linear-gradient(bottom, rgb(88,154,204) 0%, rgb(90,150,199) 100%);
-  background-image: -webkit-linear-gradient(bottom, rgb(88,154,204) 0%, rgb(90,150,199) 100%);
-  background-image: -ms-linear-gradient(bottom, rgb(88,154,204) 0%, rgb(90,150,199) 100%);
- 
+.square:active {  /* Color when clicked */
   background-image: -webkit-gradient(
       linear,
       left bottom,
       left top,
-      color-stop(0, rgb(88,154,204)),
-      color-stop(1, rgb(90,150,199))
+      color-stop(0, #538fbe),    /* Bottom of square color */
+      color-stop(1, #5aa9e6)     /* Top of square color */
   );
  }
 
