@@ -7,5 +7,5 @@ function App() {
     <Game />
   );
 }
-// testing
+
 export default App;
