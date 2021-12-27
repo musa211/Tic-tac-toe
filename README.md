@@ -1,3 +1,12 @@
+# Tic-tac-toe Game
+
+Tictactoe game with 5x5 grid size made with React JS, HTML & CSS.
+
+
+## Demo
+
+![Tictactoe Demo](https://user-images.githubusercontent.com/71911458/144735005-47b481cf-8946-450b-a981-000570008bb5.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
